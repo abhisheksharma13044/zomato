@@ -9,6 +9,7 @@ body{
 .navbar{
   display: flex;
   justify-content: space-around;
+  background-color: white;
 
 }
 .navbar__brand{
@@ -17,30 +18,240 @@ body{
 .navbar_logo{
   width: 100%
 }
-.nav_item{
-  background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+.button__primary{
+
   color: #fff;
   border: none;
   padding: 12px;
   border-radius: 6px;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
 }
+.container{
+  padding: 20px;
+}
+.hero__image1__container{
+  width: 100%;
+}
+.hero__image1{
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.hero__text{
+  font-weight: 800;
+  font-size: 30px;
+  margin: 20px 0;
+  color: #1d3557
+}
+.menu__container__title{
+  font-size: 28px;
+  font-weight: 800;
+  color: #1d3557
+}
+.menu__container__list{
+  width: 100%;
+}
+.food__image{
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.menu__container__foodcard{
+  background-color: #F9F9F9;
+  margin: 15px 0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px 8px 0 0;
+}
+.menu__container__title{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.view__more{
+  width: 100%;
+}
+.view__more__button{
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    width: 100%;
+}
+.stay__updated__title{
+  font-weight: 800;
+  text-align: center;
+  color:  #1d3557;
+
+}
+.email__button{
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    width: 120px;
+}
+.stay__updated__email__input__box{
+  background-color:#FFEBB4;
+  color: #2C3333;
+  border:  #FFBFA9;
+  padding: 10px;
+border-radius: 8px;
+
+}
+.stay__updated__input{
+  display: flex;
+  grid-gap: 15px;
+  margin-top: 10px;
+}
+
+.quote__image{
+position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.table{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.quote__text__box{
+  position: absolute;
+  top: 50%;
+  z-index: +1;
+  display: block;
+left: 0;
+right: 0;
+bottom: 0;
+text-align: center;
+
+}
+.quote__text{
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  margin: 0 1rem;
+
+}
+.footer{
+  background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.footer__logo{
+  filter: brightness(0) invert(1);
+  display: block;
+  margin: auto;
+}
+.footer__button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+
 @media (min-width: 768px){
   .navbar{
     justify-content: space-between;
     padding: 10px 30px;
+  }
+  .hero__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .menu__container{
+    position: relative;
+    margin-top: 100px;
+    padding: 0 30px;
+  }
+  .menu__container__list{
+    display: flex;
+    grid-gap: 15px;
+    margin-top: 50px;
+
+  }
+
+  #pizza{
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  .menu__container__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    z-index: -1;
+    transform: skewY(-5deg);
+  }
+  .view__more__button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  .view__more{
+      padding: 20px 0;
+      text-align: center;
+  }
+  .stay__updated__input{
+    display: flex;
+    grid-gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .quote__text{
+    font-weight: 800px;
+    font-size: 40px;
   }
 }
 @media(min-width: 1024px){
   .navbar__brand{
     width: 200px;
   }
-  .nav_item{
+  .button__primary{
     padding: 20px;
     font-size: 20px;
   }
+.hero__image__container{
+  width: 80%;
+}
+.hero__image1{
+  width: 100%;
+}
+.hero__description{
+  width:100%;
+  padding-left: 20px;
+}
+.menu__container__list{
+  display: flex;
+  grid-gap: 25px;
+  margin-top: 50px;
 
 }
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+.footer__buttons__container{
+  margin-top: 20px;
+}
+}
 
-.nav_item:hover{
-border: 2px solid;
+.button__primary:hover{
+border: 2px solid #DF7857;
+cursor: pointer;
 }
